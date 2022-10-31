@@ -50,7 +50,6 @@ const messageGoodShoePage = document.querySelector("[data-messageGood-shoe]");
 //   }
 // }
 
-const buttonFavorite = document.querySelector(".buttonFavorite");
 
 function getAllShoes() {
   fetch(END_POINT_ALLSHOES)
@@ -86,15 +85,13 @@ function renderShoes(shoes) {
     allShoesEl.innerHTML = shoesElement.join("");
   }
 }
-messageErrorShoePage.style.display = "none";
-messageGoodShoePage.style.display = "none";
+
 function addToFavoriteShoe(id) {
   if (localStorage) {
     let favoriteShoe;
     if (!localStorage["favoriteShoe"]) favoriteShoe = [];
     else favoriteShoe = JSON.parse(localStorage["favoriteShoe"]);
     if (!(favoriteShoe instanceof Array)) favoriteShoe = [];
-
     if (!favoriteShoe.includes(id)) {
       favoriteShoe.push(id);
       localStorage.setItem("favoriteShoe", JSON.stringify(favoriteShoe));
@@ -102,27 +99,15 @@ function addToFavoriteShoe(id) {
       setTimeout(() => {
         messageGoodShoePage.style.display = "none";
       }, 5000);
-      document.activeElement.className = "activeBtn";
     } else {
       // console.log("There is such an ID on the localstorage", id);
       messageErrorShoePage.style.display = "flex";
       setTimeout(() => {
         messageErrorShoePage.style.display = "none";
       }, 5000);
-      console.log(document.activeElement);
-      document.activeElement.className = "activeBtn";
     }
   }
 }
-
-// function messageErrorButton() {
-//   if (localStorage.getItem("favoriteShoe")) {
-//     messageErrorShoePage.style.display = "flex";
-//   } else if (!localStorage.getItem("favoriteShoe")) {
-//     messageErrorShoePage.style.display = "flex";
-//   }
-// }
-// messageErrorButton();
 
 async function deleteShoe(id) {
   try {
