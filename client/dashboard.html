@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/logo-test.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/form.style.css" />
+    <link rel="stylesheet" href="./css/dashboard.style.css" />
+    <title>Shoe Store</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="./dashboard.html"
+        ><img src="./images/logo-test.png" alt="Logo"
+      /></a>
+
+      <ul>
+        <li><a href="./allShoes.html">All Shoes</a></li>
+        <li><a href="./allBrands.html">All Brands</a></li>
+        <li>
+          <a href="./myFavorite.html"
+            >My Favorite &nbsp; <i class="fa-regular fa-heart"></i
+          ></a>
+        </li>
+      </ul>
+
+      <div class="userStatus">
+        <div class="statusLogout" data-status-not-login>
+          <!-- <span>Hi Please</span> -->
+          <a href="./login.html"
+            ><h2>Login &nbsp; <i class="fa-regular fa-user"></i></h2
+          ></a>
+        </div>
+
+        <div class="statusLogin" data-status-login>
+          <!-- <span data-name-login-success></span>
+          <h2 data-logout-button>Logout &nbsp; <i class="fa-regular fa-user"></i></h2> -->
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Login Success -->
+    <div class="container-dashboard">
+      <div class="loginSuccess">
+        <div data-imgProfile-login></div>
+        <h3 data-nameUser-dashboard></h3>
+        <h4>if you want <strong>Logout</strong></h4>
+        <button onclick="logoutBtn()">Click Here</button>
+      </div>
+
+      <!-- Edit Account -->
+      <div class="editAccount-Box">
+        <h4 class="accordion">
+          Edit Account &nbsp; <i class="fa-regular fa-pen-to-square"></i>
+        </h4>
+        <div class="panel">
+          <form data-update-form>
+            <input data-update-username type="text" placeholder="Username" disabled />
+            <input data-update-email type="text" placeholder="Email" disabled />
+            <input data-update-firstname type="text" placeholder="First Name" />
+            <input data-update-lastname type="text" placeholder="Last Name" />
+            <input data-update-age type="text" placeholder="Age" />
+            <input data-update-country type="text" placeholder="Country" />
+            <input data-update-city type="text" placeholder="City" />
+            <input data-update-street type="text" placeholder="Street" />
+            <input data-update-zipcode type="text" placeholder="Zipcode" />
+            <input data-update-button type="submit" value="Update User" />
+          </form>
+
+          <div class="messageEditAccount" data-message-editAccount></div>
+        </div>
+
+        <h4 class="deleteAccount" onclick="openBoxDelete()">
+          Delete Account &nbsp; <i class="fa-solid fa-trash"></i>
+        </h4>
+        <!-- Delete Box -->
+        <div class="deleteBox">
+          <button type="button" class="closeDelete" onclick="closeBoxDelete()">
+            Close &nbsp; <i class="fa-solid fa-trash"></i>
+          </button>
+          <h1>Are you sure you want to delete the account?</h1>
+          <h2>Note that the account cannot be restored!</h2>
+          <div class="buttonForDelete">
+            <button type="button" onclick="DeleteAccount()">
+              Yes I'm Sure
+            </button>
+            <button type="button" onclick="closeBoxDelete()">No</button>
+          </div>
+          <div class="messageDeleteBox">
+            <h1>You Account Deleted Goodbye!</h1>
+          </div>
+        </div>
+        <!-- Delete Box End -->
+      </div>
+
+      <div class="manage-store">
+        <h4 class="manageStoreAddBrand accordion">
+          Add Brand &nbsp; <i class="fa-solid fa-inbox"></i>
+        </h4>
+        <div class="panel">
+          <form data-addBrand-form>
+            <input
+              data-addBrand-image
+              type="text"
+              placeholder="Img Url"
+              value="https://1000logos.net/wp-content/uploads/2021/11/Nike-Logo.png"
+            />
+            <input
+              data-addBrand-name
+              type="text"
+              placeholder="Name Brand"
+              value="Nike"
+            />
+            <input data-addBrand-button type="submit" value="Add Brand" />
+          </form>
+
+          <div class="messageaddBrand" data-message-addBrand></div>
+        </div>
+
+        <h4 class="manageStoreAddProduct accordion">
+          Add Product &nbsp; <i class="fa-solid fa-cart-shopping"></i>
+        </h4>
+        <div class="panel">
+          <form data-addProduct-form>
+            <input data-addProduct-image type="text" placeholder="Img Url" />
+            <input
+              data-addProduct-name
+              type="text"
+              placeholder="Name Product"
+            />
+            <input data-addProduct-size type="text" placeholder="Size" />
+            <!-- <input data-addProduct-nameBrand type="text" placeholder="Name Brand" /> -->
+            <input data-addProduct-price type="number" placeholder="Price" />
+
+            <br />
+            <label for="optionBrand" style="text-align: left"
+              >Select Brand</label
+            >
+            <select id="optionBrand" data-addProduct-optionBrand>
+              <!-- <option disabled selected>Select Brand Name</option>
+              <option value="2">test2</option> -->
+            </select>
+
+            <input data-addProduct-button type="submit" value="Add Product" />
+          </form>
+          <div class="messageaddProduct" data-message-addProduct></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <h3>All rights reserved &copy; <span data-year-now></span></h3>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/dashboard.js"></script>
+  </body>
+</html>

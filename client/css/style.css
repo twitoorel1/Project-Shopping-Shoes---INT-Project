@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+/* Settings Default */
+:root {
+  --background-color-main: #dff6ff;
+  --background-color-main-hover: #bbc5c9;
+  --color-main: #06283d;
+  --color-hover: #083351;
+  --color-other: #47b5ff;
+  --color-basic: #ffffff;
+  --color-basic-hover: #bababa;
+  --color-error: rgb(147, 25, 25);
+  --color-error-hover: #6f1010;
+  --box-shadow-normal: rgba(0, 0, 0, 0.3);
+  --box-shadow-hover: rgba(25, 24, 24, 0.8);
+
+  /* For Test */
+  --background-color-test: rgba(162, 48, 48, 0.292);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color-main);
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: var(--color-main);
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-main);
+  font-family: "Lato", sans-serif;
+}
+
+h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-main);
+  font-family: "Lato", sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-main);
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-main);
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  background: transparent;
+  color: var(--color-basic);
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+}
+
+span {
+  color: var(--color-main);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Header */
+header {
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  background-color: var(--color-main);
+}
+
+/* Logo */
+header > a > img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Navbar */
+header > ul {
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* list-style-type: none; */
+}
+
+header > ul > li > a {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--color-basic);
+  box-shadow: 0 10px 20px -15px var(--box-shadow-normal);
+  text-decoration: none;
+  transition: 350ms;
+}
+
+header > ul > li > a:hover {
+  border-bottom: 3px solid var(--color-basic);
+  padding-bottom: 5px;
+}
+
+header > ul > li > i {
+  color: var(--color-basic);
+}
+
+/* userStatus */
+header > .userStatus {
+  width: 20vw;
+  height: auto;
+}
+
+header > .userStatus > .statusLogout {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* header > .userStatus > .statusLogout > span {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--color-basic);
+} */
+
+header > .userStatus > .statusLogout > a {
+  color: var(--color-main);
+  background-color: var(--background-color-main);
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+header > .userStatus > .statusLogin {
+  display: none; /* In Javascript - Flex */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header > .userStatus > .statusLogin > a > span {
+  font-weight: bold;
+  color: var(--color-basic);
+  /* margin-right: 10px; */
+  transition: 0.5s;
+}
+
+header > .userStatus > .statusLogin > a > span:hover {
+  color: var(--color-basic-hover);
+}
+
+header > .userStatus > .statusLogin > h2 {
+  color: var(--color-main);
+  background-color: var(--background-color-main);
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: 0.5s;
+}
+
+header > .userStatus > .statusLogin > h2:hover {
+  color: var(--color-main);
+  background-color: var(--background-color-main-hover);
+}
+
+/* Footer */
+footer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  padding: 30px 0;
+}
+
+footer h3 {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

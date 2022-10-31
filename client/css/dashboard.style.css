@@ -1,0 +1,351 @@
+.container-dashboard {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+/* Login Success */
+.loginSuccess {
+  width: 450px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: var(--color-basic);
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.203);
+  border-radius: 10px;
+  margin: 80px 0;
+  text-align: center;
+}
+.loginSuccess > div > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--color-main);
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.796);
+}
+/* .loginSuccess > h3 {
+  font-size: 30px;
+  padding: 15px 0;
+} */
+
+.loginSuccess > h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.loginSuccess > h4 > strong {
+  text-decoration: underline;
+}
+
+.loginSuccess > button {
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: var(--color-main);
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.196);
+  padding: 15px 50px;
+  margin-top: 30px;
+}
+
+.loginSuccess > button:hover {
+  box-shadow: 0 10px 54px -15px rgba(0, 0, 0, 0.567);
+}
+
+/* Edit Account */
+.editAccount-Box {
+  width: 450px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: var(--color-basic);
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.203);
+  border-radius: 10px;
+  margin: 80px 0;
+  text-align: center;
+}
+
+/* .editAccount-Box > h4 {
+  font-size: 32px;
+  text-decoration: underline;
+  margin-bottom: 40px;
+} */
+
+.accordion {
+  background-color: var(--color-main);
+  color: var(--color-basic);
+  cursor: pointer;
+  width: 90%;
+  padding: 15px 0;
+  font-size: 32px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  transition: 0.5s;
+}
+
+.accordion:hover {
+  background-color: var(--color-hover);
+  color: var(--color-basic);
+}
+
+.active {
+  background-color: var(--color-basic);
+  color: var(--color-main);
+  border-bottom: 1px solid black;
+}
+
+.panel {
+  /* background-color: black; */
+  padding: 30px 0;
+  display: none;
+  overflow: hidden;
+  margin-top: -40px;
+}
+
+.panel > form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  /* padding: 15px 0; */
+  /* margin-top: 10px; */
+}
+
+.panel > form > input,
+select {
+  width: 100%;
+  height: 51px;
+  padding: 0 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: var(--color-basic);
+  color: var(--color-main);
+  font-size: 16px;
+  box-shadow: 0 10px 20px -15px rgba(0, 0, 0, 0.14);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Lato", sans-serif;
+  transition: 450ms;
+}
+
+.panel > form > input:focus {
+  outline: none;
+  border: 1px solid var(--color-main);
+  color: var(--color-main);
+}
+
+.panel > form > input[type="submit"],
+input[type="button"] {
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: var(--color-main);
+  border: 1px solid var(--color-main);
+  color: var(--color-basic);
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.24);
+}
+
+.panel > form > input[type="submit"]:hover,
+input[type="button"]:hover {
+  box-shadow: 0 10px 54px -15px rgba(0, 0, 0, 0.667);
+  background-color: var(--color-hover);
+}
+
+.panel > form > input[type="checkbox"]:hover {
+  box-shadow: 0 10px 54px -15px rgba(0, 0, 0, 0.667);
+  background: #000;
+}
+
+.panel > form > :disabled {
+  background-color: #eee;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.messageEditAccount > h1 {
+  color: var(--color-main);
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+/* Edit Account End */
+
+/* Delete Account */
+.editAccount-Box > .deleteAccount {
+  background-color: var(--color-error);
+  color: var(--color-basic);
+  cursor: pointer;
+  width: 90%;
+  padding: 15px 0;
+  font-size: 32px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.editAccount-Box > .deleteAccount:hover {
+  background-color: var(--color-error-hover);
+  color: var(--color-basic);
+}
+
+.deleteBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  background: #fff;
+  padding: 30px 10rem;
+  display: none; /* In javascript Flex */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteBox > h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.deleteBox > h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.deleteBox > .closeDelete {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  background-color: var(--color-error);
+  color: var(--color-basic);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.deleteBox > .buttonForDelete {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 0 0;
+}
+.deleteBox > .buttonForDelete > button {
+  padding: 10px 20px;
+  color: var(--color-basic);
+  background-color: var(--color-main);
+  border-radius: 10px;
+}
+
+.deleteBox > .buttonForDelete > button:nth-child(1) {
+  background-color: var(--color-error);
+}
+
+.deleteBox > .messageDeleteBox {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 0 0;
+}
+.deleteBox > .messageDeleteBox > h1 {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: var(--color-error);
+  color: var(--color-basic);
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+/* .editAccount-Box > form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 15px 0;
+  margin-top: 10px;
+}
+
+.editAccount-Box > form > input {
+  width: 100%;
+  height: 51px;
+  padding: 0 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: var(--color-basic);
+  color: var(--color-main);
+  font-size: 16px;
+  box-shadow: 0 10px 20px -15px rgba(0, 0, 0, 0.14);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Lato", sans-serif;
+  transition: 450ms;
+}
+
+.editAccount-Box > form > input:focus {
+  outline: none;
+  border: 1px solid var(--color-main);
+  color: var(--color-main);
+}
+
+.editAccount-Box > form > input[type="submit"],
+input[type="button"] {
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: var(--color-main);
+  border: 1px solid var(--color-main);
+  color: var(--color-basic);
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.24);
+}
+
+.editAccount-Box > form > input[type="submit"]:hover,
+input[type="button"]:hover {
+  box-shadow: 0 10px 54px -15px rgba(0, 0, 0, 0.667);
+}
+
+.editAccount-Box > form > input[type="checkbox"]:hover {
+  box-shadow: 0 10px 54px -15px rgba(0, 0, 0, 0.667);
+  background: #000;
+} */
+
+/* Manage Store */
+
+.manage-store {
+  width: 450px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: var(--color-basic);
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.203);
+  border-radius: 10px;
+  margin: 80px 0;
+  text-align: center;
+}
+
+.manage-store > .panel > .messageaddBrand > h1 {
+  color: var(--color-main);
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+.manage-store > .panel > .messageaddProduct > h1 {
+  color: var(--color-main);
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 40px;
+}

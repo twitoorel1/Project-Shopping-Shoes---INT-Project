@@ -1,0 +1,68 @@
+ההגשה היא עד התאריך:
+31.10.2022
+
+להשתמש ב
+Google Fonts
+Color Plate
+
+לעשות חנות כובעים
+4 PAGES
+
+אפשר להשתמש boostarp
+
+בכל האפליקציה יש 
+HEADER
+Logo
+
+Navbar
+    All
+    Favorite
+
+Logout || Login
+
+FOOTER
+Text CopyRight &Copy;
+
+
+מסך 1
+login iN
+Form Login
+חובה
+Error Message
+Toggle Show Password - הריבוע שרואים את הסיסמה
+
+
+מסך 2
+Register
+Form Register
+חובה
+Error Message
+Toggle Show Password - הריבוע שרואים את הסיסמה
+
+
+מסך 3
+All
+להציג את הרשימה של הכובעים (הכוונה פריטים)
+
+שיש לכל אחד:
+image
+name
+price
+brand
+BTN - שיעשה לייק ויעביר לדף המוצרים האהובים  - NO
+
+
+מסך 4
+Whishlist Page
+מראה את כל המוצרים שסימנתי עלייהם לייק - NO
+
+
+
+* Bouns *
+Web Responsive
+
+אם נכנסתי בתור המשמש שסימן לייק
+הלייק היה מסומן בדף של כל המוצרים
+
+וגם אחרי שסימנתי את הלייק היה כפתור שאני יכול להסיר את הלייק
+

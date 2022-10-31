@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/logo-test.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/form.style.css" />
+    <script src="./js/auth.js" defer></script>
+    <title>Shoe Store</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="./register.html"
+        ><img src="./images/logo-test.png" alt="Logo"
+      /></a>
+
+      <ul>
+        <li><a href="./allShoes.html">All Shoes</a></li>
+        <li><a href="./allBrands.html">All Brands</a></li>
+        <li>
+          <a href="./myFavorite.html"
+            >My Favorite &nbsp; <i class="fa-regular fa-heart"></i
+          ></a>
+        </li>
+      </ul>
+
+      <div class="userStatus">
+        <div class="statusLogout" data-status-not-login>
+          <!-- <span>Hi Please</span> -->
+          <a href="./login.html"
+            ><h2>Login &nbsp; <i class="fa-regular fa-user"></i></h2
+          ></a>
+        </div>
+
+        <div class="statusLogin" data-status-login>
+          <!-- <span data-name-login-success></span>
+          <h2 data-logout-button>Logout &nbsp; <i class="fa-regular fa-user"></i></h2> -->
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    
+    <!-- Form -->
+    <div class="container-form">
+      <div class="title">
+        <i class="fa-regular fa-user"></i>
+        <h3>Sign Up</h3>
+      </div>
+
+      <form data-form-register>
+        <input type="text" data-imgProfile-input placeholder="URL Image Profile" value="http://127.0.0.1:5501/client/images/profileTest.jpg">
+        <input type="text" data-username-input placeholder="Username" value="twitoorel1">
+        <input type="email" data-email-input placeholder="Email" value="twitoorel1@gmail.com">
+        <input type="password" data-password-input placeholder="Password" value="123456">
+        <div class="showpassword" id="toggle">
+          <i class="fa-solid fa-eye"></i>&nbsp;
+          <span>Show Password</span>
+        </div>
+        <input type="text" data-firstName-input placeholder="First Name" value="Orel">
+        <input type="text" data-lastName-input placeholder="Last Name" value="Twito">
+
+        <input type="number" data-age-input placeholder="Age" value="15">
+        <input type="text" data-country-input placeholder="Country" value="Israel">
+        <input type="text" data-city-input placeholder="City" value="netivot">
+        <input type="text" data-street-input placeholder="Street" value="tzahal 19">
+        <input type="text" data-zipCode-input placeholder="Zip Code" value="80200">
+
+        <input type="submit" value="Register"></input>
+        <span data-message-form></span>
+      </form>
+
+      <h2>Do you have an existing account? <span><a href="./login.html">click here</a></span></h2>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+      <h3>All rights reserved &copy; <span data-year-now></span></h3>
+    </footer>
+  </body>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/form.register.js"></script>
+</html>

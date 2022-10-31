@@ -1,0 +1,154 @@
+.container-form {
+  width: 450px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: var(--color-basic);
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.203);
+  border-radius: 10px;
+  margin: 80px 0;
+  text-align: center;
+}
+
+/* Title */
+.container-form > .title {
+  width: 25%;
+  padding: 10px 0;
+}
+
+.container-form > .title > i {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.container-form > .title > h3 {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* Form */
+.container-form > form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 15px 0;
+  margin-top: 10px;
+}
+
+.container-form > form > input {
+  width: 100%;
+  height: 51px;
+  padding: 0 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: var(--color-basic);
+  color: var(--color-main);
+  font-size: 16px;
+  box-shadow: 0 10px 20px -15px rgba(0, 0, 0, 0.14);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Lato", sans-serif;
+  transition: 450ms;
+}
+
+.container-form > form > input:focus {
+  outline: none;
+  border: 1px solid var(--color-main);
+  color: var(--color-main);
+}
+
+.container-form > form > .showpassword {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 5px 0 30px 0;
+  color: var(--color-main);
+}
+
+/* .container-form > form > .showpassword {
+  font-size: 18px;
+  margin: 5px 0 30px 0;
+  text-align: center;
+  color: var(--color-main);
+  cursor: pointer;
+} */
+
+.container-form > form > input[type="submit"],
+input[type="button"] {
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: var(--color-main);
+  border: 1px solid var(--color-main);
+  color: var(--color-basic);
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.24);
+}
+
+.container-form > form > input[type="submit"]:hover,
+input[type="button"]:hover {
+  box-shadow: 0 10px 54px -15px rgba(0, 0, 0, 0.667);
+  background-color: var(--color-hover);
+}
+
+.container-form > form > input[type="checkbox"]:hover {
+  box-shadow: 0 10px 54px -15px rgba(0, 0, 0, 0.667);
+  background: #000;
+}
+
+.container-form > .messageForm {
+  margin-bottom: 10px;
+}
+
+/* Login Success */
+.loginSuccess {
+  width: 450px;
+  height: auto;
+  display: none; /* In Javascript - Flex */
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: var(--color-basic);
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.203);
+  border-radius: 10px;
+  margin: 80px 0;
+  text-align: center;
+}
+.loginSuccess > div > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--color-main);
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.796);
+}
+.loginSuccess > h3 {
+  font-size: 30px;
+  padding: 15px 0;
+}
+.loginSuccess > h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.loginSuccess > h4 > strong {
+  text-decoration: underline;
+}
+.loginSuccess > button {
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: var(--color-main);
+  box-shadow: 0 10px 34px -15px rgba(0, 0, 0, 0.196);
+  padding: 15px 50px;
+  margin-top: 30px;
+}
+.loginSuccess > button:hover {
+  box-shadow: 0 10px 54px -15px rgba(0, 0, 0, 0.567);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/logo-test.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/myFavorite.css" />
+    <title>Shoe Store</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="./dashboard.html"
+        ><img src="./images/logo-test.png" alt="Logo"
+      /></a>
+
+      <ul>
+        <li><a href="./allShoes.html">All Shoes</a></li>
+        <li><a href="./allBrands.html">All Brands</a></li>
+        <li>
+          <a href="./myFavorite.html"
+            >My Favorite &nbsp; <i class="fa-regular fa-heart"></i
+          ></a>
+        </li>
+      </ul>
+
+      <div class="userStatus">
+        <div class="statusLogout" data-status-not-login>
+          <!-- <span>Hi Please</span> -->
+          <a href="./login.html"
+            ><h2>Login &nbsp; <i class="fa-regular fa-user"></i></h2
+          ></a>
+        </div>
+
+        <div class="statusLogin" data-status-login>
+          <!-- <span data-name-login-success></span>
+          <h2 data-logout-button>Logout &nbsp; <i class="fa-regular fa-user"></i></h2> -->
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Content -->
+    <div class="deleteAllFavorite">
+      <button data-delete-allFavorite>Clear All Favorite</button>
+    </div>
+
+    <div class="container-favorite" data-container-favorite>
+      <!-- Start -->
+      <!-- <div class="box-shoe">
+        <span><i class="fa-solid fa-x"></i></span>
+        <img src="./images/shoe-1.webp" />
+        <div class="head-box">
+          <h1>Brand: Nike</h1>
+          <h1>Price: 500$</h1>
+        </div>
+        <h1>Nike Air Jordan</h1>
+        <h3>Sizes: <span>35 Eu</span></h3>
+      </div> -->
+      <!-- End -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <h3>All rights reserved &copy; <span data-year-now></span></h3>
+    </footer>
+  </body>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/myFavorite.js"></script>
+</html>
